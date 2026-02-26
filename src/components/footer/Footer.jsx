@@ -30,19 +30,27 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-20">
           {/* Logo + Description */}
           <div className="flex flex-col md:max-w-xs">
-            <NavLink to="/" className="inline-block mb-4">
+            <NavLink to="/" className="inline-block mb-2">
               <img
                 src="/logo.png"
                 className="h-28 w-44 object-contain"
                 alt="Yas Agency"
               />
             </NavLink>
+
+            {/* DecoHub text under the logo */}
+            <Typography
+              variant="h5"
+              className="text-accent-foreground font-bold mb-4 md:text-2xl text-lg"
+            >
+              DecoHub
+            </Typography>
+
             <p className="text-sm md:text-lg text-accent-foreground/70 leading-relaxed">
               Transforming spaces into inspiring environments. Based in Giza,
               serving clients worldwide.
             </p>
           </div>
-
           {/* Links */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {LINKS.map(({ title, items }) => (
@@ -74,7 +82,7 @@ export default function Footer() {
             variant="small"
             className="text-sm md:text-base text-accent-foreground/50 tracking-wide"
           >
-            &copy; {currentYear} DOT Agency — All Rights Reserved
+            &copy; {currentYear} DecoHub — All Rights Reserved
           </Typography>
 
           <div className="flex gap-6">

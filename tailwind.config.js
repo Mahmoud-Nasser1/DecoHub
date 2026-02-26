@@ -34,7 +34,7 @@ module.exports = withMT({
         foreground: "#1F2A26",
 
         card: {
-          DEFAULT: "#EDE3D7",
+         DEFAULT: "hsl(25, 25%, 92%)",
           foreground: "#1F2A26",
         },
 
