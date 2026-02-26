@@ -1,8 +1,13 @@
 import React from 'react'
+import First from './components/First'
+import Sec from './components/Sec'
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <div>
+      <First />
+      <Sec />
+    </div>
   )
 }
 
