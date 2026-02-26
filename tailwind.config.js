@@ -34,7 +34,7 @@ module.exports = withMT({
         foreground: "#1F2A26",
 
         card: {
-         DEFAULT: "hsl(25, 25%, 92%)",
+          DEFAULT: "hsl(25, 25%, 92%)",
           foreground: "#1F2A26",
         },
 
@@ -127,6 +127,10 @@ module.exports = withMT({
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
+      },
+
+      clipPath: {
+        hexagon: "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
       },
     },
   },
