@@ -66,7 +66,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-10 w-full bg-background/90 backdrop-blur-md border-border`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
-        <Typography as="a" href="#" className="cursor-pointer font-medium">
+        <Typography as="a" href="/" className="cursor-pointer font-medium">
           <img src="/logo.png" className="h-20 w-32" />
         </Typography>
 
