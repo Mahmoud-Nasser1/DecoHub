@@ -50,7 +50,7 @@ const Services = () => {
             return (
               <FadeIn key={service.title} delay={i * 0.1}>
                 <div className="group p-8 rounded-2xl bg-card hover:bg-accent transition-colors duration-500 cursor-pointer">
-                  <div className="w-14 h-14 hexagon bg-accent group-hover:bg-sage flex items-center justify-center mb-6 transition-colors duration-500">
+                  <div className="w-14 h-14 [clip-path:polygon(25%_5%,75%_5%,100%_50%,75%_95%,25%_95%,0%_50%)] bg-accent group-hover:bg-sage flex items-center justify-center mb-6 transition-colors duration-500">
                     <IconComponent
                       className="text-accent-foreground group-hover:text-foreground transition-colors duration-500"
                       size={24}
