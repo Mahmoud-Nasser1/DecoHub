@@ -32,7 +32,7 @@ const First = () => {
 
       {/* Decorative hexagons */}
       <motion.div
-        className="absolute top-24 left-[12%] w-14 h-14 hexagon border border-accent-foreground/10"
+        className="absolute top-24 left-[12%] w-14 h-14 hexagon border border-accent-foreground/8"
         animate={{ rotate: 360, y: [0, -8, 0] }}
         transition={{
           rotate: { duration: 30, repeat: Infinity, ease: "linear" },
@@ -50,8 +50,16 @@ const First = () => {
       />
 
       {/* Arch */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] md:w-[700px] h-[250px] md:h-[350px] border-t border-l border-r border-accent-foreground/8 arch pointer-events-none" />
-
+      <div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2
+  w-[600px] md:w-[900px]
+  h-[300px] md:h-[400px]
+  border-t border-l border-r
+  border-white/80
+  rounded-t-full
+  pointer-events-none
+  z-0"
+      />
       {/* Content */}
       <motion.div
         className="container mx-auto px-6 relative z-7"
