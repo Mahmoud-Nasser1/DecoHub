@@ -1,37 +1,54 @@
 import React from "react";
 import FadeIn from "../../../components/animation/FadeIn";
 import { motion } from "framer-motion";
+import { image } from "framer-motion/client";
 
 const portfolio = [
   {
-    image: "/Portifolio/img1.jpg",
-    title: "Serene Bedroom",
-    category: "Residential",
+    image: "/Portifolio/img1.jpeg",
+    // title: "Serene Bedroom",
+    // category: "Residential",
   },
   {
-    image: "/Portifolio/img2.jpg",
-    title: "Modern Kitchen",
-    category: "Residential",
+    image: "/Portifolio/img2.jpeg",
+    // title: "Modern Kitchen",
+    // category: "Residential",
   },
   {
-    image: "/Portifolio/img3.jpg",
-    title: "Executive Office",
-    category: "Commercial",
+    image: "/Portifolio/img3.jpeg",
+    // title: "Executive Office",
+    // category: "Commercial",
   },
   {
-    image: "/Portifolio/img4.jpg",
-    title: "Restaurant Lounge",
-    category: "Commercial",
+    image: "/Portifolio/img4.jpeg",
+    // title: "Restaurant Lounge",
+    // category: "Commercial",
   },
   {
-    image: "/Portifolio/img5.jpg",
-    title: "Spa Bathroom",
-    category: "Residential",
+    image: "/Portifolio/img5.jpeg",
+    // title: "Spa Bathroom",
+    // category: "Residential",
   },
   {
-    image: "/Portifolio/img6.jpg",
-    title: "Reading Nook",
-    category: "Residential",
+    image: "/Portifolio/img6.jpeg",
+    // title: "Reading Nook",
+    // category: "Residential",
+  },
+
+  {
+    image: "/Portifolio/img7.jpeg",
+    // title: "Hotel Lobby",
+    // category: "Commercial",
+  },
+  {
+    image: "/Portifolio/img8.jpeg",
+    // title: "Cozy Living Room",
+    // category: "Residential",
+  },
+  {
+    image: "/Portifolio/img9.jpeg",
+    // title: "Corporate Conference Room",
+    // category: "Commercial",
   },
 ];
 const Portifolio = () => {
