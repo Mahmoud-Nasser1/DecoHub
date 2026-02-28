@@ -49,20 +49,30 @@ const First = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="font-heading px-20 text-5xl md:text-7xl font-bold text-accent-foreground mb-8 leading-[1.1]"
+            className="font-heading px-4 sm:px-10 md:px-20 
+             text-3xl sm:text-5xl md:text-7xl 
+             font-bold text-accent-foreground 
+             mb-8 leading-[1.1] flex flex-wrap justify-center"
             style={{ perspective: "600px" }}
           >
-            {title.split("").map((char, i) => (
-              <motion.span
-                key={i}
-                custom={i}
-                variants={letterVariants}
-                initial="hidden"
-                animate="visible"
-                className="inline-block"
+            {title.split(" ").map((word, wordIndex) => (
+              <span
+                key={wordIndex}
+                className="inline-flex whitespace-nowrap mr-3"
               >
-                {char === " " ? "\u00A0" : char}
-              </motion.span>
+                {word.split("").map((char, i) => (
+                  <motion.span
+                    key={i}
+                    custom={i + wordIndex * 10}
+                    variants={letterVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
             ))}
           </h1>
 
