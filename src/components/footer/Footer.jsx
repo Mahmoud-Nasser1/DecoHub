@@ -88,7 +88,7 @@ export default function Footer() {
           <div className="flex gap-6">
             {/* Facebook */}
             <NavLink
-              to="https://www.facebook.com/share/183jaBNUCJ/"
+              to="https://www.facebook.com/profile.php?id=61587172225223&rdid=jcKH8P108l74D1pf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1875SQN9jB%2F#"
               target="_blank"
               className="text-accent-foreground/70 hover:text-[#1877F2] transition-colors"
             >
@@ -97,20 +97,9 @@ export default function Footer() {
               </svg>
             </NavLink>
 
-            {/* Instagram */}
-            <NavLink
-              to="https://www.instagram.com/dot_gency?igsh=cGt6ZHdtaTU1N2Rk"
-              target="_blank"
-              className="text-accent-foreground/70 hover:text-[#E1306C] transition-colors"
-            >
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7.75 2C4.678 2 2 4.678 2 7.75v8.5C2 19.322 4.678 22 7.75 22h8.5C19.322 22 22 19.322 22 16.25v-8.5C22 4.678 19.322 2 16.25 2h-8.5zm0 2h8.5C18.216 4 20 5.784 20 7.75v8.5c0 1.966-1.784 3.75-3.75 3.75h-8.5C5.784 20 4 18.216 4 16.25v-8.5C4 5.784 5.784 4 7.75 4zm8.75 1.5a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
-              </svg>
-            </NavLink>
-
             {/* WhatsApp */}
             <NavLink
-              to="https://wa.me/01018565141"
+              to="https://wa.me/01505520918"
               target="_blank"
               className="text-accent-foreground/70 hover:text-[#25D366] transition-colors"
             >
