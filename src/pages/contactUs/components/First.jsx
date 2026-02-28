@@ -82,21 +82,21 @@ const First = () => {
             Get in Touch
           </motion.span>
 
-          <h1 className="font-heading text-5xl md:text-7xl font-bold text-accent-foreground mb-8 leading-[1.1]">
-            {title.split("").map((char, i) => (
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-accent-foreground mb-8 leading-[1.1]">
+            {title.split(" ").map((word, i) => (
               <motion.span
                 key={i}
                 initial={{ opacity: 0, y: 40, rotateX: -90 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{
-                  delay: 0.4 + i * 0.04,
+                  delay: 0.4 + i * 0.15,
                   duration: 0.6,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="inline-block"
-                style={{ display: char === " " ? "inline" : "inline-block" }}
+                className="inline-block mr-3"
+                style={{ whiteSpace: "nowrap" }} // 👈 ده المهم
               >
-                {char === " " ? "\u00A0" : char}
+                {word}
               </motion.span>
             ))}
           </h1>
