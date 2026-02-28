@@ -53,7 +53,7 @@ const Trust = () => {
               className="rounded-2xl overflow-hidden aspect-[4/5] shadow-xl"
             >
               <img
-                src="/Portifolio/img5.jpg"
+                src="/Portifolio/img5.jpeg"
                 alt="Elegant interior showcasing our work"
                 className="w-full h-full object-cover"
                 loading="lazy"

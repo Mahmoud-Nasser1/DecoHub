@@ -52,7 +52,7 @@ const Last = () => {
                 "
             >
               <img
-                src={portfolio3}
+                src="/Portifolio/img3.jpeg"
                 alt="Deco Hub studio work"
                 className="w-full h-full object-cover"
                 loading="lazy"

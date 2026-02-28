@@ -18,15 +18,15 @@ const Sec = () => {
     // إرسال البيانات عبر EmailJS
     emailjs
       .send(
-        "YOUR_SERVICE_ID",   // غيّرها بخدمة EmailJS الخاصة بك
-        "YOUR_TEMPLATE_ID",  // غيّرها بالتمبلت ID الخاص بك
+        "VITE_EMAILJS_SERVICE_ID", // غيّرها بخدمة EmailJS الخاصة بك
+        "YOUR_TEMPLATE_ID", // غيّرها بالتمبلت ID الخاص بك
         {
           from_name: formData.name,
           from_email: formData.email,
           from_phone: formData.phone,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY"    // غيّرها بالمفتاح العام من حسابك
+        "SmH5ensGjE7L3K0SI", // غيّرها بالمفتاح العام من حسابك
       )
       .then(
         (result) => {
@@ -36,7 +36,7 @@ const Sec = () => {
         (error) => {
           toast.error("Failed to send message. Please try again.");
           console.error(error.text);
-        }
+        },
       );
   };
 
@@ -44,7 +44,6 @@ const Sec = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
           {/* Form */}
           <FadeIn>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -178,7 +177,7 @@ const Sec = () => {
                         Phone
                       </p>
                       <p className="font-body text-sm text-muted-foreground">
-                        +20 123 456 789
+                        01505520918
                       </p>
                     </div>
                   </div>
@@ -195,7 +194,7 @@ const Sec = () => {
                         Email
                       </p>
                       <p className="font-body text-sm text-muted-foreground">
-                        hello@decohub.com
+                        Maha.Mano90@gmail.com{" "}
                       </p>
                     </div>
                   </div>
@@ -206,7 +205,7 @@ const Sec = () => {
               <div className="rounded-2xl overflow-hidden border border-border h-64">
                 <iframe
                   title="Deco Hub Location - Cairo, Egypt"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123456789!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3453.091287975844!2d31.20857718488446!3d30.06291768187555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAzJzQ2LjUiTiAzMcKwMTInMjMuMCJF!5e0!3m2!1sar!2seg"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -217,7 +216,6 @@ const Sec = () => {
               </div>
             </div>
           </FadeIn>
-
         </div>
       </div>
     </section>
