@@ -15,18 +15,17 @@ const Sec = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // إرسال البيانات عبر EmailJS
     emailjs
       .send(
-        "VITE_EMAILJS_SERVICE_ID", // غيّرها بخدمة EmailJS الخاصة بك
-        "YOUR_TEMPLATE_ID", // غيّرها بالتمبلت ID الخاص بك
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           from_phone: formData.phone,
           message: formData.message,
         },
-        "SmH5ensGjE7L3K0SI", // غيّرها بالمفتاح العام من حسابك
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
