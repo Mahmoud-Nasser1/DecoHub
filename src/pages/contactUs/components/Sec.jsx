@@ -193,7 +193,7 @@ const Sec = () => {
                         Email
                       </p>
                       <p className="font-body text-sm text-muted-foreground">
-                        Maha.Mano90@gmail.com{" "}
+                        decohub608@gmail.com
                       </p>
                     </div>
                   </div>
